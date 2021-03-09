@@ -1,0 +1,41 @@
+#PROSES MENDAPATKAN DATA / GET
+###
+GET http://localhost:3000/notes_data
+Content-Type: application/json
+
+#PROSES MENAMBAHKAN DATA / POST
+###
+POST http://localhost:3000/notes_data
+Content-Type: application/json
+
+{
+    "title" : "ini adalah catatan saya",
+    "body" : "ini adalah catatan saya.."
+}
+
+#PROSES update data menyeluruh / PUT
+###
+PUT http://localhost:3000/notes_data/1
+Content-Type: application/json
+
+{
+    "title" : "saya merubah title 1",
+    "body" : "saya mengubah body 1"
+}
+
+#PROSES update data satuan / PATCH
+###
+PATCH http://localhost:3000/notes_data/2
+Content-Type: application/json
+
+{
+    "body" : "saya hanya mengubah body pada data id ke 2"
+}
+
+#PROSES delete data / DELETE
+###
+DELETE http://localhost:3000/notes_data/2
+Content-Type: application/json
+
+#Silakan tambahkan data pada RESOURCE user_data
+#tambahkan minimal 3 data di dalamnya..

@@ -1,0 +1,12 @@
+###
+GET https://a2a813e8695c.ngrok.io/notes_data
+Content-Type: application/json
+
+###
+POST https://a2a813e8695c.ngrok.io/notes_data
+Content-Type: application/json
+
+{
+    "title" : "ini fadli",
+    "body" : "aku kangen kamu.."
+}
