@@ -2,6 +2,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
 
 html{
     scroll-behavior: smooth;
@@ -126,4 +127,42 @@ a{
     background-color: black;
     color: white;
     text-transform: uppercase;
+}
+
+.card_container{
+    width: 100vw;
+    height: auto;
+    min-height: 100vh;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.card{
+    width: calc(90%/3);
+    height: 300px;
+    padding: 20px;
+    background-color: lightgoldenrodyellow;
+    box-shadow: 3px 5px 8px rgba(0,0,0,0.2);
+    border-left: 5px solid orange;
+    overflow-y: scroll;
+}
+
+
+#delete_icon,  #edit_icon{
+    font-size: 1rem;
+    color: gray;
+    user-select: none;
+    cursor: pointer;
+}
+
+#delete_icon:hover{
+    color: red;
+}
+
+#edit_icon:hover{
+    color: green;
 }

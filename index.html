@@ -24,7 +24,7 @@
         
 
         <!--FORM INPUT NOTE-->
-            <form class="note_form" id="note_form">
+            <form class="note_form" id="note_form" onsubmit="submitNote(event)">
 
                 <button class="btn_show" id="btn_show" type="button" onclick="showForm()">
                     note
@@ -36,8 +36,8 @@
                 </div>
 
                 <div class="form_group">
-                    <label for="body">body</label>
-                    <textarea type="text" id="body" rows="5"> </textarea>
+                    <label for="noteBody">body</label>
+                    <textarea type="text" id="noteBody" rows="5"> </textarea>
                 </div>
 
                 <button id="submit" type="submit">add note</button>
@@ -45,7 +45,12 @@
             </form>
         <!--END FORM INPUT NOTE-->
 
+        <!--CARD-->
+            <section class="card_container">
 
+
+            </section>
+        <!--END CARD-->
 
 
     </main>
