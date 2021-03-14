@@ -136,7 +136,7 @@ a{
     padding: 40px;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     gap: 40px;
     flex-wrap: wrap;
 }
