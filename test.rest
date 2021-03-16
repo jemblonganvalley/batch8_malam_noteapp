@@ -9,18 +9,18 @@ POST http://localhost:3000/notes_data
 Content-Type: application/json
 
 {
-    "title" : "ini adalah catatan saya",
-    "body" : "ini adalah catatan saya.."
+    "title" : "data baru..",
+    "body" : "data baru...."
 }
 
 #PROSES update data menyeluruh / PUT
 ###
-PUT http://localhost:3000/notes_data/1
+PUT http://localhost:3000/notes_data/11
 Content-Type: application/json
 
 {
-    "title" : "saya merubah title 1",
-    "body" : "saya mengubah body 1"
+    "title" : "saya merubah title 11",
+    "body" : "saya mengubah body 11"
 }
 
 #PROSES update data satuan / PATCH
