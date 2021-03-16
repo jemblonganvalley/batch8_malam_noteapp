@@ -9,8 +9,8 @@ POST http://localhost:3000/notes_data
 Content-Type: application/json
 
 {
-    "title" : "data baru..",
-    "body" : "data baru...."
+    "title" : "data baru lagi nih..",
+    "body" : "data baru lagin nih...."
 }
 
 #PROSES update data menyeluruh / PUT

@@ -14,6 +14,30 @@
 </head>
 <body>
     
+    <div class="edit_modal" id="edit_modal">
+
+            <span class="material-icons" id="close" onclick="hideEditModal()">close</span>
+
+            <!--FORM INPUT NOTE-->
+            <form class="edit_form" id="edit_form" onsubmit="editData(id)">
+
+                <div class="form_group">
+                    <label for="edit_title">title</label>
+                    <input type="text" id="edit_title" required>
+                </div>
+
+                <div class="form_group">
+                    <label for="edit_body">body</label>
+                    <textarea type="text" id="edit_body" rows="5"> </textarea>
+                </div>
+
+                <button id="submit" type="submit">edit note</button>
+
+            </form>
+            <!--END FORM INPUT NOTE-->
+
+    </div>
+
     <main id="app">
 
         <!--NAVBAR-->
@@ -24,7 +48,7 @@
         
 
         <!--FORM INPUT NOTE-->
-            <form class="note_form" id="note_form">
+            <form class="note_form" id="note_form" onsubmit="createData(event)">
 
                 <button class="btn_show" id="btn_show" type="button" onclick="showForm()">
                     note
@@ -45,8 +69,15 @@
             </form>
         <!--END FORM INPUT NOTE-->
 
+            <!--CARD AREA-->
+            <section class="card_area" id="card_area">
 
+                <!--CARD Akan DItambahkan disini-->
 
+            </section>
+            <!--END CARD AREA-->
+            
+            
 
     </main>
 
