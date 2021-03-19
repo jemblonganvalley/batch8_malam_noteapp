@@ -45,7 +45,7 @@ const getDataFromApi = ()=>{
 
                 <div class="action">
                     <i class="material-icons" id="delete" onclick="deleteData(${e.id})">delete</i>
-                    <i class="material-icons" id="edit" onclick="showEditModal()">edit</i>
+                    <i class="material-icons" id="edit" onclick="showEditModal(${e.id})">edit</i>
                 </div>
 
                 <h3 class="card_title"> ${e.title} </h3>
@@ -105,13 +105,12 @@ const createData = (event)=>{
 }
 
 //FUNCTION EDIT
-const editData = (id)=>{
-
-
+const editData = ()=>{
 
     //tangkap dari edit form
-    let title = document.getElementById('edit_title')
-    let body = document.getElementById('edit_body')
+    let title = document.getElementById('edit_title').value
+    let body = document.getElementById('edit_body').value
+    let id = document.getElementById('edit_id').value
 
     fetch(`http://localhost:3000/notes_data/${id}`, {
         method : 'PUT',
@@ -127,13 +126,36 @@ const editData = (id)=>{
     .then(res => res.json())
     .then(data => console.log(data))
     .catch(err => console.log(err))
-
 }
 
 
-const showEditModal  = ()=>{
+const showEditModal  = (id)=>{
+
+    //Element Selector
     let em = document.getElementById('edit_modal')
+    let et = document.getElementById('edit_title')
+    let eb = document.getElementById('edit_body')
+    let ei = document.getElementById('edit_id')
+
+    //show modal
     em.style.display = 'flex'
+
+    //ambil data berdasarkan ID
+    fetch(`http://localhost:3000/notes_data/${id}`, {
+        method : 'GET',
+        mode : 'cors',
+        headers : {
+            "Content-Type" : "application/json"
+        }
+    })
+    .then(res => res.json())
+    .then(data => {
+        et.setAttribute('value', data.title)
+        ei.setAttribute('value', data.id)
+        eb.innerHTML = data.body
+    })
+    .catch(err => console.log(err))
+
 }
 
 const hideEditModal  = ()=>{

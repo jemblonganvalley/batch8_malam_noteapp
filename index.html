@@ -14,12 +14,15 @@
 </head>
 <body>
     
+    <!--MODAL EDIT-->
     <div class="edit_modal" id="edit_modal">
 
             <span class="material-icons" id="close" onclick="hideEditModal()">close</span>
 
             <!--FORM INPUT NOTE-->
-            <form class="edit_form" id="edit_form" onsubmit="editData(id)">
+            <form class="edit_form" id="edit_form" onsubmit="editData()">
+
+                <input type="hidden" id="edit_id" >
 
                 <div class="form_group">
                     <label for="edit_title">title</label>
@@ -37,6 +40,7 @@
             <!--END FORM INPUT NOTE-->
 
     </div>
+    <!--END MODAL EDIT-->
 
     <main id="app">
 

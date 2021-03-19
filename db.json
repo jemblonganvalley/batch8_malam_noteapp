@@ -1,14 +1,14 @@
 {
   "notes_data": [
     {
-      "title": "saya merubah title 1",
-      "body": "saya mengubah body 1",
-      "id": 1
+      "title": "kali ini kita akan",
+      "body": "belajar nodejs baru test\n",
+      "id": 2
     },
     {
-      "id": 3,
-      "title": "ini adalah title 3",
-      "body": "ini adalah body 3"
+      "title": "Rupiah",
+      "body": " kali ini",
+      "id": 3
     }
   ],
   "user_data": [

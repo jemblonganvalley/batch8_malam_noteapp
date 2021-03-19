@@ -1,7 +1,13 @@
-#PROSES MENDAPATKAN DATA / GET
+#PROSES MENDAPATKAN SEMUA DATA / GET
 ###
 GET http://localhost:3000/notes_data
 Content-Type: application/json
+
+#PROSES MENDAPATKAN SATU DATA / GET
+###
+GET http://localhost:3000/notes_data/1
+Content-Type: application/json
+
 
 #PROSES MENAMBAHKAN DATA / POST
 ###
